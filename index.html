@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <div class="resume-form">
+            <label>Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+           
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            
+            <label>Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your Number">
+
+            <label>Skills:</label>
+            <textarea name="" id="skills" placeholder="E.g HTML, CSS, Javascript e.t.c"></textarea>
+
+            <label>Experience:</label>
+            <textarea  id="experience" placeholder="your work experience"></textarea>
+
+            <label>Education:</label>
+            <textarea  id="education" placeholder="your education background"></textarea>
+
+            <button onclick="generateResume()">Generate Resume</button>
+        </div>
+        <div id="resume">
+            <h2 id="res-name"></h2>
+            <p> Email:<span id="res-email"></span> </p>
+            <p> Phone:<span id="res-phone"></span> </p>
+            <h3>Skills</h3>
+            <p id="res-skills"></p>
+            <h3>Experience</h3>
+            <p id="res-experience"></p>
+            <h3>Education</h3>
+            <p id="res-education"></p>
+            <button onclick="downloadResume()">Download Resume</button>
+        </div>
+    </div>
+    <script src="server.js"></script>
+</body>
+</html>
